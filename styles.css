@@ -1,0 +1,11 @@
+.border {
+    border: 1px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+#about {
+    margin-top: 56px;
+}

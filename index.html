@@ -85,7 +85,14 @@
             <div class="col-md-3 col-4">
               <i class="fa-brands fa-square-js"></i>
               <p>JavaScript</p>
-              
+            </div>
+            <div class="col-md-3 col-4">
+              <i class="fa-brands fa-bootstrap"></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="col-md-3 col-4">
+              <img src="media/jquery-logo.png" width="100px" height="100px">
+              <p>Jquery</p>
             </div>
             <div class="col-md-3 col-4">
               <i class="fa-brands fa-php"></i>
@@ -120,8 +127,15 @@
         <hr>
         <section id="classes">
           <h1 class="center">Classes Taken</h1>
+          <input type="text" id="classSearch" onkeyup="classSearch()" placeholder="Search for classes">
+          <select name="classSearchType" id="classSearchType">
+            <option value="courseNumber">Course Number</option>
+            <option value="className">Class Name</option>
+            <option value="grade">Grade</option>
+          </select>
+          <p id="demo"></p>
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-striped" id="classTable">
               <thead>
                 <tr>
                   <th scope="col">Course Number</th>

@@ -127,12 +127,14 @@
         <hr>
         <section id="classes">
           <h1 class="center">Classes Taken</h1>
-          <input type="text" id="classSearch" onkeyup="classSearch()" placeholder="Search for classes">
-          <select name="classSearchType" id="classSearchType">
-            <option value="courseNumber">Course Number</option>
-            <option value="className">Class Name</option>
-            <option value="grade">Grade</option>
-          </select>
+          <div class="center">
+            <input type="text" id="classSearch" onkeyup="classSearch()" placeholder="Search for classes">
+            <select name="classSearchType" id="classSearchType">
+              <option value="courseNumber">Course Number</option>
+              <option value="className">Class Name</option>
+              <option value="grade">Grade</option>
+            </select>
+          </div>
           <p id="demo"></p>
           <div class="table-responsive">
             <table class="table table-striped" id="classTable">
